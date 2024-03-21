@@ -23,6 +23,7 @@ const MuseumCard = () => {
             <div className="bg-white rounded-[40px] flex flex-col justify-center items-center">
               <Image
                 src={M1}
+                alt="M1"
                 className="object-cover w-[500px] h-[500px] rounded-[40px]"
               />
               
@@ -39,6 +40,7 @@ const MuseumCard = () => {
             <div className="bg-white rounded-[40px] flex flex-col justify-center items-center">
               <Image
                 src={M2}
+                alt="M2"
                 className="object-cover w-[500px] h-[500px] rounded-[40px]"
               />
               

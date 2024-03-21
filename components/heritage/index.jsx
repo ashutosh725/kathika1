@@ -5,7 +5,7 @@ const Heritage = () => {
   return (
     <div className=' pt-[90px]'>
       <div>
-        <Image src={Slide1} className='w-full h-full object-cover'/>
+        <Image src={Slide1} alt='Slide1' className='w-full h-full object-cover'/>
       </div>
      <div className='bg-white rounded-b-[40px]'>
      <div className='container mx-auto'>

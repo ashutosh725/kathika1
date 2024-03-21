@@ -18,13 +18,13 @@ const Events1 = () => {
 </div>
 <div className='grid md:grid-cols-3 grid-cols-1 place-content-center place-items-center gap-10 pt-8'>
     <div>
-        <Image src={Event1} className='w-[400px] h-[400px] object-cover'/>
+        <Image src={Event1} alt='Event1' className='w-[400px] h-[400px] object-cover'/>
     </div>
     <div>
-        <Image src={Event2} className='w-[400px] h-[400px] object-cover'/>
+        <Image src={Event2} alt='Event2' className='w-[400px] h-[400px] object-cover'/>
     </div>
     <div>
-        <Image src={Event3} className='w-[400px] h-[400px] object-cover'/>
+        <Image src={Event3} alt='Event3' className='w-[400px] h-[400px] object-cover'/>
     </div>
 </div>
         </div>

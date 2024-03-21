@@ -1,7 +1,7 @@
 
-import Br1 from "../../public/brunch/br1 (1).jpeg";
-import Br2 from "../../public/brunch/br1 (1).jpg";
-import Br3 from "../../public/brunch/br1 (2).jpg";
+import Br1 from "../../public/brunch/br.jpeg";
+import Br2 from "../../public/brunch/br1.jpg";
+import Br3 from "../../public/brunch/br2.jpg";
 import TrustBanner from "../trust/TrustBanner";
 const BrunchSection = () => {
   return (

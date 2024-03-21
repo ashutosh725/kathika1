@@ -6,7 +6,7 @@ const TeamSection = () => {
   return (
     <div>
        <div>
-        <Image src={TeamSlide} className='w-full h-full object-cover'/>
+        <Image src={TeamSlide} alt='teamSlide' className='w-full h-full object-cover'/>
       </div>
       <div className='bg-white rounded-b-[40px]'>
      <div className='container mx-auto'>

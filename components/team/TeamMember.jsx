@@ -61,6 +61,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely6}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -73,6 +74,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely4}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -87,6 +89,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely1}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -99,6 +102,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely2}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -111,6 +115,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely5}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -125,6 +130,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely3}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
@@ -137,6 +143,7 @@ const TeamMember = () => {
             <div>
               <Image
                 src={Lovely4}
+                alt="Member"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>

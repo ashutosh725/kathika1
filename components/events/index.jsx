@@ -6,7 +6,7 @@ const EventSection = () => {
   return (
     <div className=' pt-[90px]'>
       <div>
-        <Image src={Events1} className='w-full h-full object-contain'/>
+        <Image src={Events1} alt='events1' className='w-full h-full object-contain'/>
       </div>
      <div className='bg-white rounded-b-[40px]'>
      <div className='container mx-auto'>

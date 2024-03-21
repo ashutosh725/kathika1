@@ -3,7 +3,7 @@ import Mueseum1 from '../../public/museum/museum.jpg'
 
 const MuseumSection = () => {
   return (
-    <div className=' pt-[90px]'>
+    <div className=' pt-[110px]'>
      <div  className="   bg-cover bg-center  h-full " style={{ backgroundImage: `url(${Mueseum1.src})`, backgroundSize: 'cover' , backgroundPosition: 'center'}}>
    <div className='bg-[rgba(61,61,61,0.35)] flex justify-center items-center h-full'>
    <div className='container mx-auto'>

@@ -21,7 +21,7 @@ const OurStory = () => {
 </div>
 <div className='lg:w-[50%] w-full'>
   <div className=''>
-  <Image src={Story1}  className='rounded-[40px] w-full h-full  object-contain'/>
+  <Image src={Story1} alt='Story1'  className='rounded-[40px] w-full h-full  object-contain'/>
   </div>
 </div>
 
@@ -33,7 +33,7 @@ const OurStory = () => {
 <div className='flex flex-col lg:flex-row justify-center items-center gap-[40px] w-full py-6'>
 <div className='lg:w-[50%] w-full'>
   <div className=''>
-  <Image src={Story2}  className='rounded-[40px] w-full h-full  object-contain'/>
+  <Image src={Story2} alt='story2'  className='rounded-[40px] w-full h-full  object-contain'/>
   </div>
 </div>
 <div className='lg:w-[50%] flex flex-col  w-full'>

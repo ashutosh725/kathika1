@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <div className='pt-[75px]'>
        <div>
-        <Image src={ContactSlide} className='w-full h-full object-cover'/>
+        <Image src={ContactSlide} alt='Contact' className='w-full h-full object-cover'/>
       </div>
       <div className='bg-white rounded-b-[40px]'>
      <div className='container mx-auto'>

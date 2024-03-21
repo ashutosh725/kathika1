@@ -13,7 +13,7 @@ const Heart = () => {
 </div>
 <div className='lg:w-[35%] w-full'>
   <div className=''>
-  <Image src={Hearts}  className='rounded-[40px] w-[400px] h-[400px] object-cover'/>
+  <Image src={Hearts} alt='Hearts'  className='rounded-[40px] w-[400px] h-[400px] object-cover'/>
   </div>
 </div>
         </div>

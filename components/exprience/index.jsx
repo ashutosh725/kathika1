@@ -6,7 +6,7 @@ const ExpSection = () => {
   return (
     <div className=' pt-[90px]'>
     <div>
-      <Image src={Exp} className='w-full h-full object-cover'/>
+      <Image src={Exp} alt='exprience' className='w-full h-full object-cover'/>
     </div>
    <div className='bg-white rounded-b-[40px]'>
    <div className='container mx-auto'>

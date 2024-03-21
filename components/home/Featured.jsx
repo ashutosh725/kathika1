@@ -1,5 +1,8 @@
 "use client"
-import Brands from "./Brands";
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import Brand1 from "../../public/brands/Traveller.png";
 import Brand2 from "../../public/brands/vogue.png";
@@ -25,42 +28,94 @@ const Featured = () => {
   const brandImages = [Brand1, Brand2, Brand3, Brand4, Brand5];
   const brandImages1 = [Brand6, Brand7, Brand8, Brand9];
   const brandImages2 = [Brand10, Brand11, Brand12, Brand13, Brand14];
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Initial slidesToShow
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint for mobile devices
+        settings: {
+          slidesToShow: 2, // Show 2 slides on mobile
+          slidesToScroll: 1,
+        }
+      }
+    ],
+    arrows: false,
   
+  };
   return (
-    <div>
-      <div className="mb-10 mt-20 text-center px-4">
+    <div >
+      <div className="mb-10 mt-20  text-center px-4">
         <h1 className="md:text-[45px] text-[32px] font-Yeseva">KATHIKA was featured in...</h1>
         <p className="md:text-[27px] text-[16px] font-Alice">Click to read and explore the Articles</p>
       </div>
-     
-    
-        <div className="flex justify-center items-center gap-5 py-10 bg-white">
+    <div className=' bg-white' >
+    <Slider {...settings}   className='flex justify-center items-center   py-10'>
+      <div>
       <Link href={'/'}>  <Image src={Brand1} alt={Brand1} className="h-16 object-contain" /></Link>
-       <Link href={`https://www.vogue.in/content/kathika-cultural-centre-offers-a-glimpse-into-the-contemporary-mehmaan-nawazi-of-shahjahanabad`} target="_blank"> <Image src={Brand2} alt={Brand2} className="h-16 object-contain" /></Link>
+      </div>
+      <div>
+      <Link href={`https://www.vogue.in/content/kathika-cultural-centre-offers-a-glimpse-into-the-contemporary-mehmaan-nawazi-of-shahjahanabad`} target="_blank"> <Image src={Brand2} alt={Brand2} className="h-16 object-contain" /></Link>
+      </div>
+      <div>
       <Link href={`https://www.indiatoday.in/magazine/leisure/story/20230911-old-building-new-purpose-living-heritage-2429681-2023-09-01`} target="_blank">  <Image src={Brand3} alt={Brand3} className="h-16 object-contain" /></Link>
+      </div>
+      <div>
       <Link href={'/'}>  <Image src={Brand4} alt={Brand4} className="h-16 object-contain" /></Link>
+      </div>
+      <div>
       <Link href={'/'}>  <Image src={Brand5} alt={Brand5} className="h-16 object-contain" /></Link>
-        </div>
-      
-
-        <div className="flex justify-center items-center gap-5 py-10 bg-black">
-       <Link href={`https://www.thehindu.com/society/kathika-cultural-centre-in-old-delhi-celebrates-delhis-history-through-a-haveli-museum/article67097474.ece`} target="_blank"> <Image src={Brand6} alt={Brand6} className="h-16 object-contain" /></Link>
-       <Link href={`https://indianexpress.com/article/lifestyle/art-and-culture/inside-kathika-cultural-centre-museum-haveli-old-delhi-8872891/
-`} target="_blank"> <Image src={Brand7} alt={Brand7} className="h-16 object-contain" /></Link>
-      <Link href={`https://www.thehindu.com/society/kathika-cultural-centre-in-old-delhi-celebrates-delhis-history-through-a-haveli-museum/article67097474.ece`} target="_blank">  <Image src={Brand8} alt={Brand8} className="h-16 object-contain" /></Link>
-      <Link href={'/'}>  <Image src={Brand9} alt={Brand9} className="h-16 object-contain" /></Link>
-      
-        </div>
-
+      </div>
      
-    
-        <div className="flex justify-center items-center gap-5 py-10 bg-white">
-      <Link href={`https://www.hindustantimes.com/cities/delhi-news/reviving-old-delhi-s-cultural-heritage-havelis-turned-into-vibrant-cultural-spaces-for-art-and-music-performances-101693160857984-amp.html#amp_tf=From%20%251%24s&aoh=17072040698664&referrer=https%3A%2F%2Fwww.google.com`} target="_blank">  <Image src={Brand10} alt={Brand10} className="h-16 object-contain" /></Link>
-        <Link href={`https://m.timesofindia.com/entertainment/events/delhi/restored-haveli-turns-into-a-haven-of-art-for-world-heritage-week/articleshow/105496304.cms`} target="_blank"><Image src={Brand11} alt={Brand11} className="h-16 object-contain" /></Link>
-      <Link href={`https://thepatriot.in/culture/a-romance-with-the-past-a-delhi-museum-bringing-old-to-the-new-38808`} target="_blank">  <Image src={Brand12} alt={Brand12} className="h-16 object-contain" /></Link>
-       <Link href={`https://lifestyle.livemint.com/how-to-lounge/art-culture/kathika-cultural-centre-art-space-shahjahanabad-old-delhi-111690790505097.html`} target="_blank"> <Image src={Brand13} alt={Brand13} className="h-16 object-contain" /></Link>
-    <Link href={'/'}>    <Image src={Brand14} alt={Brand14} className="h-16 object-contain" /></Link>
+    </Slider>
+    </div>
+   
+    <div>
+      <Slider {...settings} rtl={true}  className='flex justify-center items-center  bg-black py-10'>
+<div>
+<Link href={`https://www.thehindu.com/society/kathika-cultural-centre-in-old-delhi-celebrates-delhis-history-through-a-haveli-museum/article67097474.ece`} target="_blank"> <Image src={Brand6} alt={Brand6} className="h-16 object-contain" /></Link>
+</div>
+<div>
+<Link href={`https://indianexpress.com/article/lifestyle/art-and-culture/inside-kathika-cultural-centre-museum-haveli-old-delhi-8872891/
+`} target="_blank"> <Image src={Brand7} alt={Brand7} className="h-16 object-contain" /></Link>
+</div>
+<div>
+<Link href={`https://www.thehindu.com/society/kathika-cultural-centre-in-old-delhi-celebrates-delhis-history-through-a-haveli-museum/article67097474.ece`} target="_blank">  <Image src={Brand8} alt={Brand8} className="h-16 object-contain" /></Link>
+</div>
+<div>
+<Link href={'/'}>  <Image src={Brand9} alt={Brand9} className="h-16 object-contain" /></Link>
+</div>
+      </Slider>
+    </div>
+        
+     <div>
+      <Slider {...settings} className='flex justify-center items-center  bg-white py-10'>
+        <div>
+        <Link href={`https://www.hindustantimes.com/cities/delhi-news/reviving-old-delhi-s-cultural-heritage-havelis-turned-into-vibrant-cultural-spaces-for-art-and-music-performances-101693160857984-amp.html#amp_tf=From%20%251%24s&aoh=17072040698664&referrer=https%3A%2F%2Fwww.google.com`} target="_blank">  <Image src={Brand10} alt={Brand10} className="h-16 object-contain" /></Link>
         </div>
+        <div>
+          
+        <Link href={`https://m.timesofindia.com/entertainment/events/delhi/restored-haveli-turns-into-a-haven-of-art-for-world-heritage-week/articleshow/105496304.cms`} target="_blank"><Image src={Brand11} alt={Brand11} className="h-16 object-contain" /></Link>
+        </div>
+        <div>
+        <Link href={`https://thepatriot.in/culture/a-romance-with-the-past-a-delhi-museum-bringing-old-to-the-new-38808`} target="_blank">  <Image src={Brand12} alt={Brand12} className="h-16 object-contain" /></Link>
+        </div>
+        <div>
+        <Link href={`https://lifestyle.livemint.com/how-to-lounge/art-culture/kathika-cultural-centre-art-space-shahjahanabad-old-delhi-111690790505097.html`} target="_blank"> <Image src={Brand13} alt={Brand13} className="h-16 object-contain" /></Link>
+        </div>
+        <div>
+        <Link href={'/'}>    <Image src={Brand14} alt={Brand14} className="h-16 object-contain" /></Link>
+        </div>
+      </Slider>
+     </div>
+
+        
+
+    
     
     </div>
   );
