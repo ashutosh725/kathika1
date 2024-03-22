@@ -26,21 +26,21 @@ const Featured = () => {
     <div>
       <div className="mb-10 mt-20  text-center px-4">
         <h1 className="md:text-[45px] text-[32px] font-Yeseva">
-          KATHIKA was featured in...
+        Kathika was featured in ...
         </h1>
         <p className="md:text-[27px] text-[16px] font-Alice">
           Click to read and explore the Articles
         </p>
       </div>
-      <div className=" bg-gray-300 py-5">
-        <Marquee >
+      <div className=" bg-[#c8ae91] py-5">
+        <Marquee pauseOnHover="true">
           <div>
             <Link href={"/"}>
               {" "}
               <Image
                 src={Brand1}
                 alt={Brand1}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -53,7 +53,7 @@ const Featured = () => {
               <Image
                 src={Brand2}
                 alt={Brand2}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -66,7 +66,7 @@ const Featured = () => {
               <Image
                 src={Brand3}
                 alt={Brand3}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -76,7 +76,7 @@ const Featured = () => {
               <Image
                 src={Brand4}
                 alt={Brand4}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -86,7 +86,7 @@ const Featured = () => {
               <Image
                 src={Brand5}
                 alt={Brand5}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -100,7 +100,7 @@ const Featured = () => {
               <Image
                 src={Brand6}
                 alt={Brand6}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -114,7 +114,7 @@ const Featured = () => {
               <Image
                 src={Brand7}
                 alt={Brand7}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -127,7 +127,7 @@ const Featured = () => {
               <Image
                 src={Brand8}
                 alt={Brand8}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -137,7 +137,7 @@ const Featured = () => {
               <Image
                 src={Brand9}
                 alt={Brand9}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -151,7 +151,7 @@ const Featured = () => {
               <Image
                 src={Brand10}
                 alt={Brand10}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -163,7 +163,7 @@ const Featured = () => {
               <Image
                 src={Brand11}
                 alt={Brand11}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -176,7 +176,7 @@ const Featured = () => {
               <Image
                 src={Brand12}
                 alt={Brand12}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -189,7 +189,7 @@ const Featured = () => {
               <Image
                 src={Brand13}
                 alt={Brand13}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>
@@ -199,7 +199,7 @@ const Featured = () => {
               <Image
                 src={Brand14}
                 alt={Brand14}
-                className="h-16 w-28 object-contain mr-9"
+                className="h-24 w-36 object-contain mr-9"
               />
             </Link>
           </div>

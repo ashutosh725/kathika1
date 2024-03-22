@@ -2,7 +2,8 @@
 import Header from "@/components/common/Header";
 import "./globals.css";
 import Footer from "@/components/common/Footer";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 export const metadata = {
@@ -25,7 +26,18 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
       <Footer/>    
-      
+      <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </body>
     </html>
   );

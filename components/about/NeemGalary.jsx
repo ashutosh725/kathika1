@@ -12,12 +12,12 @@ const NeemGalary = () => {
 <div>
     <h3 className='md:text-[45px] text-[32px] text-center font-Yeseva'>Neem Ki Haveli Gallery</h3>
     <div className='flex flex-col md:flex-row justify-center items-center py-10 gap-10'>
-<div className='lg:w-[50%] w-full'>
+<div className='lg:w-[50%] flex justify-center items-center w-full'>
     <div>
         <Image src={Neem1} alt='Neem1' className='rounded-[40px] w-[600px] h-[500px] object-cover'/>
     </div>
 </div>
-<div className='lg:w-[50%] w-full'>
+<div className='lg:w-[50%] flex justify-center items-center w-full'>
     <div>
         <Image src={Neem2} alt='Neem2' className='rounded-[40px] w-[600px] h-[500px] object-cover'/>
     </div>

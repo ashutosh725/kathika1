@@ -13,7 +13,7 @@ const Hcards = () => {
   <div className=" group relative items-center justify-center overflow-hidden rounded-md cursor-pointer">
             <div>
               <Image
-        src={Hc1}  alt={Hc1} className='rounded-[40px] w-[400px] h-[400px]  object-contain'
+        src={Hc1}  alt={Hc1} className=' w-[400px] h-[400px]  object-contain'
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b  group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70 rounded-md"></div>
@@ -46,14 +46,14 @@ const Hcards = () => {
 </div>
 <div className='md:w-[40%] w-full'>
   <div className='flex justify-center items-center'>
-  <Image src={Hc2}  alt={Hc1} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
+  <Image src={Hc2}  alt={Hc1} className=' w-[400px] h-[400px]  object-contain'/>
   </div>
 </div>
 </div>
 <div className='flex flex-col md:flex-row justify-center items-center gap-[40px] w-full '>
 <div className='md:w-[40%] w-full'>
   <div className='flex justify-center items-center'>
-  <Image src={Hc3}  alt={Hc3} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
+  <Image src={Hc3}  alt={Hc3} className=' w-[400px] h-[400px]  object-contain'/>
   </div>
 </div>
 <div className='md:w-[60%] bg-body rounded-[40px] justify-center  items-center p-5 flex flex-col  w-full'>

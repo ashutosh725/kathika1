@@ -1,6 +1,19 @@
-import React from "react";
-
+"use client"
+import React, { useState } from "react";
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const NewsLetter = () => {
+ const [email, setEmail] = useState('');
+ const handleSubmit = (event) => {
+  event.preventDefault(); 
+  console.log("Subscribed email:", email); 
+  toast.success("Subscribe successfully!");
+
+};
+
+const handleEmailChange = (event) => {
+  setEmail(event.target.value); 
+};
   return (
     <div className="bg-[#fefbf5] py-10  text-center">
       <h2 className="mb-4.5 lg:text-[43px] text-[22px] font-dMSerifDisplay font-semibold  leading-[62px]  text-[#292F36] dark:text-white">Dilli ki dil wali Newsletter</h2>
@@ -8,20 +21,24 @@ const NewsLetter = () => {
         Do drop in your email so that we can share with you our latest
         exhibitions, upcoming events and a whole lot of Old Delhi memories.
       </p>
-      <form action="# " className=" flex  justify-center">
+      <form onSubmit={handleSubmit} className=" flex flex-col items-center justify-center">
         <div className="relative my-4 w-[400px]">
           <input
             type="text"
+          value={email}
+          onChange={handleEmailChange}
+          required
             placeholder="Email address"
-            className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+            className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none "
           />
 
           <button
+       
             aria-label="signup to newsletter"
             className="absolute right-0 p-4"
           >
             <svg
-              className="fill-[#757693] hover:fill-primary dark:fill-white"
+              className="fill-[#757693] hover:fill-primary "
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -42,15 +59,17 @@ const NewsLetter = () => {
             </svg>
           </button>
         </div>
-      </form>{" "}
-      <div className="mb-10 flex  justify-center">
+        <div className="mb-10 flex  justify-center">
         <button
+           type="submit"
           aria-label="get started button"
-          className="flex rounded-lg bg-black px-8 py-3 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+          className="flex rounded-lg bg-black px-8 py-3 text-white duration-300 ease-in-out hover:bg-blackho "
         >
           Subscribe
         </button>
       </div>
+      </form>{" "}
+    
       <p className="text-[#4D5053]  font-jost font-[400] lg:text-[18px] text-[15px]  tracking-[0.22px] leading-[33px]">
         Join our mailing list to stay up to date on our progress and important
         announcements.

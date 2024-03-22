@@ -6,14 +6,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
-
+import React, { useState } from "react";
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { IoMdMail } from "react-icons/io";
 
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const handleSubmit = (event) => {
+   event.preventDefault(); 
+   console.log("Subscribed email:", email); 
+   toast.success("Subscribe successfully!");
+ 
+ };
+ 
+ const handleEmailChange = (event) => {
+   setEmail(event.target.value); 
+ };
   return (
     <>
-      <footer className="border-t border-stroke bg-[black] dark:border-strokedark dark:bg-blacksection">
+      <footer className="border-t border-stroke bg-[black] ">
         <div className="container mx-auto">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-20">
@@ -42,7 +55,7 @@ const Footer = () => {
                     height={160}
                     src="/logo/logo-footer.svg"
                     alt="Logo"
-                    // className="dark:hidden"
+                 
                   />
                   
                 </a>
@@ -51,7 +64,7 @@ const Footer = () => {
                 </div>
                 <div className="flex justify-start mb-2 items-center mt-6 gap-4">
               
-                    <FaLocationDot className="text-white text-[30px]" />
+                    <FaLocationDot className="text-white text-[20px]" />
                  
                   <p className="  text-[#FFF5EE90] ">
                     Kathika Haveli imli Mohalla,<br/> Kucha Pati Ram Sita Ram Bazaar,<br/>
@@ -61,7 +74,7 @@ const Footer = () => {
 
                 <div className="  flex gap-4 mb-2 ">
              
-                    <IoMdMail className="text-white text-[30px]" />
+                    <IoMdMail className="text-white text-[20px]" />
                
                   <a
                      href="mailto:info@kathika.in"
@@ -72,7 +85,7 @@ const Footer = () => {
                 </div>
                 <div className=" flex gap-4 mb-2 justify-start items-center ">
              
-                    <MdCall className="text-white text-[30px]" />
+                    <MdCall className="text-white text-[20px]" />
              
                   <div>
                     <div className="flex justify-start items-center gap-2">
@@ -206,22 +219,27 @@ const Footer = () => {
                     Subscribe to receive future updates
                   </p>
 
-                  <form action="#">
+                  <form onSubmit={handleSubmit}>
                     <div className="relative">
                       <input
                         type="text"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none    "
                       />
 
                       <button
+                      type="submit"
                         aria-label="signup to newsletter"
                         className="absolute right-0 p-4"
                       >
                         <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
+                          className="fill-[#757693] hover:fill-primary "
                           width="20"
                           height="20"
+
                           viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +267,7 @@ const Footer = () => {
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
+          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7  lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
                 hidden: {
@@ -330,7 +348,7 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.facebook.com/Kathika.OldDelhi/" target="_blank" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -378,7 +396,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.linkedin.com/company/kathikaolddelhi/?originalSubdomain=in" target="_blank" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
