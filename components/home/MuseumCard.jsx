@@ -5,10 +5,11 @@ import M1 from "../../public/home/cul1.jpg";
 import M2 from "../../public/home/cul2.jpeg";
 import ContactModel from "./ContactModel";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const MuseumCard = () => {
   const [contactmodel, setContactModel] = useState(false);
-
+const router = useRouter();
   const handleOpenContactModel = () => {
     setContactModel(true);
   };
@@ -16,10 +17,14 @@ const MuseumCard = () => {
   const handleCloseContactModel = () => {
     setContactModel(false);
   };
+
+  const handlebtn = ()=> {
+    router.push('/experiences-activities')
+  }
   return (
     <div className="my-20 ">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row   justify-center items-center gap-16">
+        <div className="flex flex-col md:flex-row   justify-center items-start gap-16">
        
             <div className="bg-white rounded-[40px] flex flex-col justify-center items-center">
               <Image
@@ -53,7 +58,7 @@ const MuseumCard = () => {
               <p className="text-[25px] font-Alice">{`(Closed on Mondays)`}</p>
               </div>
               <div className="py-4">
-                <Link href={'/experiences-activities'} className="px-7 py-3 rounded-full bg-body text-[20px] uppercase"  >Know More</Link>
+                <button onClick={handlebtn} className="px-7 py-3  rounded-full bg-body  text-[20px] uppercase"  >Know More</button>
               </div>
             </div>
           </div>
