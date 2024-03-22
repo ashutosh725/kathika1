@@ -1,14 +1,14 @@
 import React from 'react'
-import Banner2 from "../../public/culture/1.jpg"
+import Banner2 from "../../public/culture/1.png"
 
 const HBanner = () => {
   return (
     <div>
     <div  className='mt-10'>
-    <div  className="   bg-cover bg-center lg:h-[500px] h-full lg:mb-20 mb-0" style={{ backgroundImage: `url(${Banner2.src})`, backgroundSize: 'cover' , backgroundPosition: 'center'}}>
-<div className='bg-[rgba(61,61,61,0.35)] flex justify-center items-center h-full'>
+    <div  className="   bg-cover bg-center lg:h-[500px] h-full lg:mb-10 mb-0" style={{ backgroundImage: `url(${Banner2.src})`, backgroundSize: 'cover' , backgroundPosition: 'center'}}>
+<div className='bg-[rgba(243,240,240,0.08)] flex justify-center items-center h-full'>
 <div className='container mx-auto'>
-<div className='bg-[rgba(245,242,242,0.50)] rounded-[40px] my-5 h-full flex justify-center items-center'>
+<div className='bg-[rgba(245,242,242,0.61)] rounded-[40px] my-5 h-full flex justify-center items-center'>
      <div className='flex flex-col  gap-10 justify-between items-center py-20 px-10 '>
 <div className='flex flex-col items-center justify-center  gap-3  w-full'> 
             

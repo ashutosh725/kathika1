@@ -1,10 +1,13 @@
-import TeamSection from "@/components/team";
-import TeamMember from "@/components/team/TeamMember";
 
+import TeamMember from "@/components/team/TeamMember";
+import TeamSlide from '../../public/team/teamhero.jpg'
+import ImageSlider from "@/components/common/ImageSlider";
+import HeroSection from "@/components/common/HeroSection";
 export default function Page (){
     return(
         <>
-        <TeamSection/>
+        <ImageSlider images={[TeamSlide]}/>
+        <HeroSection heading={`The Team of Kathika Cultural Centre`}/>
         <TeamMember/>
         </>
     )

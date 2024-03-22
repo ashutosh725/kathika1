@@ -4,6 +4,10 @@ import { Icon } from "@mui/material";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdCall } from "react-icons/md";
+
+import { IoMdMail } from "react-icons/io";
 
 
 const Footer = () => {
@@ -13,7 +17,7 @@ const Footer = () => {
         <div className="container mx-auto">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-20">
-            <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
+            <div className="flex flex-wrap  gap-8 justify-between items-start lg:gap-10">
               <motion.div
                 variants={{
                   hidden: {
@@ -30,7 +34,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-full lg:w-1/4"
+                className="animate_top "
               >
                 <a href="index.html" className="relative">
                   <Image
@@ -45,20 +49,20 @@ const Footer = () => {
                 <div>
                   
                 </div>
-                <div className="mb-2 flex gap-2 mt-6">
-                  <Icon>
-                    <LocationOn style={{ color: "white" }} />
-                  </Icon>
+                <div className="flex justify-start mb-2 items-center mt-6 gap-4">
+              
+                    <FaLocationDot className="text-white text-[30px]" />
+                 
                   <p className="  text-[#FFF5EE90] ">
-                    Kathika Haveli imli Mohalla, Kucha Pati Ram Sita Ram Bazaar,
-                    Gali Khatikan, Near Himmat Garh Police Station Delhi 110006
+                    Kathika Haveli imli Mohalla,<br/> Kucha Pati Ram Sita Ram Bazaar,<br/>
+                    Gali Khatikan, Near Himmat<br/> Garh Police Station Delhi 110006
                   </p>
                 </div>
 
-                <div className="mb-2  flex gap-2 ">
-                  <Icon>
-                    <Email style={{ color: "white" }} />
-                  </Icon>
+                <div className="  flex gap-4 mb-2 ">
+             
+                    <IoMdMail className="text-white text-[30px]" />
+               
                   <a
                      href="mailto:info@kathika.in"
                     className="font-small  text-[#FFF5EE90] dark:text-white"
@@ -66,10 +70,10 @@ const Footer = () => {
                     info@kathika.in
                   </a>
                 </div>
-                <div className="mb-2 flex gap-2 ">
-                  <Icon>
-                    <Phone style={{ color: "white" }} />
-                  </Icon>
+                <div className=" flex gap-4 mb-2 justify-start items-center ">
+             
+                    <MdCall className="text-white text-[30px]" />
+             
                   <div>
                     <div className="flex justify-start items-center gap-2">
                       <p className="text-[#FFF5EE90]">David:</p>
@@ -90,129 +94,8 @@ const Footer = () => {
                 </div>
               </motion.div>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
-              {/* <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-white dark:text-white">
-                   About Us
-                  </h4>
-
-                  <ul>
-                   
-                    <li>
-                      <a
-                        href="/our-story"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                     Our Story
-                      </a>
-                    </li>
-                   
-                    <li>
-                      <a
-                        href="/kathika-museum"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                      Kathika Museum
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/neem-ki-haveli"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                   Neem ki Haveli
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                  Gallery
-                      </a>
-                    </li>
-                   
-                    
-                  </ul>
-                </motion.div>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-white dark:text-white">
-                   About Us
-                  </h4>
-
-                  <ul>
-                   
-                    <li>
-                      <a
-                        href="/our-story"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                     Our Story
-                      </a>
-                    </li>
-                   
-                    <li>
-                      <a
-                        href="/kathika-museum"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                      Kathika Museum
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/neem-ki-haveli"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                   Neem ki Haveli
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                  Gallery
-                      </a>
-                    </li>
-                   
-                    
-                  </ul>
-                </motion.div> */}
+             
+            
                 <motion.div
                   variants={{
                     hidden: {
@@ -236,7 +119,14 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                   
+                  <li>
+                      <a
+                        href="/about"
+                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
+                      >
+                       About
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/culture-heritage"
@@ -245,7 +135,14 @@ const Footer = () => {
                         Culture & Heritage
                       </a>
                     </li>
-                   
+                    <li>
+                      <a
+                        href="/experiences-activities"
+                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
+                      >
+                     Experiences & Activities
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/events-collaborations"
@@ -345,7 +242,7 @@ const Footer = () => {
                     </div>
                   </form>
                 </motion.div>
-              </div>
+             
               
             </div>
           </div>
@@ -377,11 +274,11 @@ const Footer = () => {
                     English
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
                     Privacy Policy
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
                     Support

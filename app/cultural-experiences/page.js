@@ -1,5 +1,5 @@
 import ExpSection from "@/components/exprience";
-import Experience from "@/components/exprience/Experience";
+import Experience from "@/components/activities/Experience";
 
 
 export default function Page() {

@@ -4,6 +4,7 @@ import Image from "next/image";
 import M1 from "../../public/home/cul1.jpg";
 import M2 from "../../public/home/cul2.jpeg";
 import ContactModel from "./ContactModel";
+import Link from "next/link";
 
 const MuseumCard = () => {
   const [contactmodel, setContactModel] = useState(false);
@@ -52,7 +53,7 @@ const MuseumCard = () => {
               <p className="text-[25px] font-Alice">{`(Closed on Mondays)`}</p>
               </div>
               <div className="py-4">
-                <button className="px-7 py-3 rounded-full bg-body text-[20px] uppercase"  >Know More</button>
+                <Link href={'/experiences-activities'} className="px-7 py-3 rounded-full bg-body text-[20px] uppercase"  >Know More</Link>
               </div>
             </div>
           </div>

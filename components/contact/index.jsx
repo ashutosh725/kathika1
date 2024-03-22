@@ -1,13 +1,11 @@
 import React from 'react'
-import ContactSlide from '../../public/contact/contact.jpg'
-import Image from 'next/image'
+
+
 
 const ContactSection = () => {
   return (
-    <div className='pt-[75px]'>
-       <div>
-        <Image src={ContactSlide} alt='Contact' className='w-full h-full object-cover'/>
-      </div>
+    <div >
+      
       <div className='bg-white rounded-b-[40px]'>
      <div className='container mx-auto'>
         <div className='   flex flex-col justify-center items-center pt-5 pb-3 gap-2'>

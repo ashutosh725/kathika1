@@ -5,12 +5,26 @@ import Hc3 from '../../public/culture/hc3.png'
 import Image from 'next/image'
 const Hcards = () => {
   return (
-    <div className='my-10  bg-white py-10'>
+    <div className='  bg-white py-10'>
       <div className='container mx-auto'>
       <div className='flex flex-col md:flex-row justify-center items-center gap-[40px] w-full py-6'>
-<div className='md:w-[40%] w-full'>
-  <div className=''>
-  <Image src={Hc1}  alt={Hc1} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
+<div className='md:w-[40%] flex justify-center items-center w-full'>
+  <div className='flex justify-center items-center'>
+  <div className=" group relative items-center justify-center overflow-hidden rounded-md cursor-pointer">
+            <div>
+              <Image
+        src={Hc1}  alt={Hc1} className='rounded-[40px] w-[400px] h-[400px]  object-contain'
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b  group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70 rounded-md"></div>
+            <div className="absolute  inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[40%]   rounded-md">
+              <h1 className="text-white font-Alice mb-4 font-bold text-[20px] tracking-wider">
+              Photo Credit : Sundeep Bali
+              </h1>
+             
+            </div>
+          </div>
+ 
   </div>
 </div>
 <div className='md:w-[60%] bg-body rounded-[40px] justify-center  items-center p-5 flex flex-col  w-full'>
@@ -31,15 +45,15 @@ const Hcards = () => {
    
 </div>
 <div className='md:w-[40%] w-full'>
-  <div className=''>
+  <div className='flex justify-center items-center'>
   <Image src={Hc2}  alt={Hc1} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
   </div>
 </div>
 </div>
 <div className='flex flex-col md:flex-row justify-center items-center gap-[40px] w-full '>
 <div className='md:w-[40%] w-full'>
-  <div className=''>
-  <Image src={Hc1}  alt={Hc3} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
+  <div className='flex justify-center items-center'>
+  <Image src={Hc3}  alt={Hc3} className='rounded-[40px] w-[400px] h-[400px]  object-contain'/>
   </div>
 </div>
 <div className='md:w-[60%] bg-body rounded-[40px] justify-center  items-center p-5 flex flex-col  w-full'>

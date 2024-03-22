@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Lovely1 from "../../public/team/lovely (1).png";
+import Lovely1 from "../../public/team/lovely1.png";
 import Lovely2 from "../../public/team/lovely (2).png";
 import Lovely3 from "../../public/team/lovely (3).png";
 import Lovely4 from "../../public/team/lovely (4).png";
-import Lovely5 from "../../public/team/lovely (5).png";
-import Lovely6 from "../../public/team/founder.jpg";
+import Lovely5 from "../../public/team/lovely5.png";
+import Lovely6 from "../../public/team/founder.png";
 
 const list = [
   {
@@ -67,7 +67,7 @@ const TeamMember = () => {
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
               <p className="md:text-[25px] text-[]16px">Atul Khanna</p>
-              <p className="md:text-[25px] text-[]16px">Founder & Curator</p>
+              <p className="md:text-[20px] text-[]16px">Founder & Curator</p>
             </div>
           </div>
           <div className="bg-white">
@@ -80,7 +80,7 @@ const TeamMember = () => {
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
               <p className="md:text-[25px] text-[]16px">Ashna Khanna</p>
-              <p className="md:text-[25px] text-[]16px">Director</p>
+              <p className="md:text-[20px] text-[]16px">Director</p>
             </div>
           </div>
         </div>
@@ -93,9 +93,9 @@ const TeamMember = () => {
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center items-center gap-1 py-4">
+            <div className="flex flex-col justify-center items-center gap-1 py-4 ">
               <p className="md:text-[25px] text-[]16px">Lovely Bhadra</p>
-              <p className="md:text-[25px] text-[]16px ">Research & Content Manager</p>
+              <p className="md:text-[20px] text-[]16px ">Research & Content Manager</p>
             </div>
           </div>
           <div className="bg-white">
@@ -106,9 +106,9 @@ const TeamMember = () => {
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center items-center gap-1 py-4">
+            <div className="flex flex-col justify-center items-center gap-1 py-4 ">
               <p className="md:text-[25px] text-[]16px">Tanuka Guria</p>
-              <p className="md:text-[25px] text-[]16px">Research & Content Manager</p>
+              <p className="md:text-[20px] text-[]16px">Research & Content Manager</p>
             </div>
           </div>
           <div className="bg-white">
@@ -121,7 +121,7 @@ const TeamMember = () => {
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
               <p className="md:text-[25px] text-[]16px">David</p>
-              <p className="md:text-[25px] text-[]16px">Relations Manager</p>
+              <p className="md:text-[20px] text-[]16px px-3">Relations Manager</p>
             </div>
           </div>
         </div>
@@ -136,21 +136,21 @@ const TeamMember = () => {
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
               <p className="md:text-[25px] text-[]16px">Meghna Mitra</p>
-              <p className="md:text-[25px] text-[]16px">Museum Assistant</p>
+              <p className="md:text-[20px] text-[]16px">Museum Assistant</p>
             </div>
           </div>
           <div className="bg-white">
             <div>
               <Image
-                src={Lovely4}
-                alt="Member"
+                src=''
+                alt="Faisal"
                 className="h-[350px] w-[300px] object-cover"
               />
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
               <p className="md:text-[25px] text-[]16px">Faisal Saleem
 </p>
-              <p className="md:text-[25px] text-[]16px">Museum Educator</p>
+              <p className="md:text-[20px] text-[]16px">Museum Educator</p>
             </div>
           </div>
         </div>

@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 
+
+.marqueeContainer {
+    overflow: hidden;
+    width: 100%; 
+  }
+  
+  .marquee {
+    display: flex;
+    animation-timing-function: linear;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .brandImage {
+    height: 50px; 
+    margin-right: 20px; 
+  }
+  
