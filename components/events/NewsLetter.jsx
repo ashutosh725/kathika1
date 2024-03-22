@@ -22,7 +22,7 @@ const handleEmailChange = (event) => {
         exhibitions, upcoming events and a whole lot of Old Delhi memories.
       </p>
       <form onSubmit={handleSubmit} className=" flex flex-col items-center justify-center">
-        <div className="relative my-4 w-[400px]">
+        <div className="relative my-4 md:w-[400px] w-[300px]">
           <input
             type="text"
           value={email}
