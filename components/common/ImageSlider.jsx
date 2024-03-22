@@ -22,7 +22,7 @@ const ImageSlider = ({ showButtons = true, images }) => {
       setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
     }
   };
-s
+
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
