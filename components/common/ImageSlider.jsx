@@ -22,7 +22,7 @@ const ImageSlider = ({ showButtons = true, images }) => {
       setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
     }
   };
-
+s
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
@@ -34,7 +34,7 @@ const ImageSlider = ({ showButtons = true, images }) => {
   }, [currentSlide]);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-[95px]">
       <div className="relative w-full  overflow-hidden shadow-lg">
        <div className="h-full w-full">
        <Image
@@ -45,7 +45,7 @@ const ImageSlider = ({ showButtons = true, images }) => {
         />
        </div>
         {showButtons && (
-          <div className="absolute top-0  flex h-full w-full items-center  justify-between">
+          <div className="absolute top-0   flex h-full w-full items-center  justify-between">
             <button
               onClick={prevSlide}
               className=" rounded-full bg-[#00000030] p-3 text-white hover:bg-[#000000] hover:text-gray-300 focus:outline-none"
