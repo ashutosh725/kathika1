@@ -27,12 +27,12 @@ const Experience = () => {
             </div>
             <div className=''>
                 <div>
-                <Image src={Exp2} alt='M3' className='w-[500px] h-[300px] object-cover rounded-[40px]'/>
+                <Image src={Exp3} alt='M3' className='w-[500px] h-[300px] object-cover rounded-[40px]'/>
                 </div>
                 <h3 className='text-center md:text-[25px] text-[16px] py-5'>Curatorial Walkthrough</h3>
             </div>
             <div className=''>
-                <div><Image src={Exp3} alt='M3' className='w-[500px] h-[300px] object-cover rounded-[40px]'/></div>
+                <div><Image src={Exp2} alt='M3' className='w-[500px] h-[300px] object-cover rounded-[40px]'/></div>
                 <h3 className='text-center md:text-[25px] text-[16px] py-5'>DIY Handcrafted Workshop</h3>
             </div>
             

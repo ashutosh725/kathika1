@@ -69,8 +69,8 @@ const Footer = () => {
                     <FaLocationDot className="text-white text-[20px]" />
                  
                   <p className="  text-[#FFF5EE90] ">
-                    Kathika Haveli imli Mohalla,<br/> Kucha Pati Ram Sita Ram Bazaar,<br/>
-                    Gali Khatikan, Near Himmat<br/> Garh Police Station Delhi 110006
+                    Kathika Haveli, Imli Mohalla,<br/> Kucha Pati Ram, Sita Ram Bazaar,<br/>
+                    Gali Khatikan, Near Himmat<br/> Garh Police Station, Delhi 110006
                   </p>
                 </div>
 

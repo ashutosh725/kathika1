@@ -9,7 +9,7 @@ const Heart = () => {
         <div className='flex flex-col lg:flex-row justify-center items-center gap-[40px] w-full py-6'>
 <div className='lg:w-[57%] w-full'>
     <h3 className='md:text-[45px] text-[32px] font-Yeseva'>A Restoration from Heart</h3>
-    <p className='md:text-[27px] text-[16px]  text-justify'>{`Two 19th Century Havelis facing each other, restored, are now turned into one-of-a-kind Museum. Founder and Curator, Mr. Atul Khanna, ‘A Pakka Dilliwala’ at heart aims to preserve, promote and celebrate the cultural heritage of Old Delhi.  The Kathika Cultural Centre brings to you a collection of Archival Photographs, Vintage Decorative Art Objects and Handicrafts, that takes you back in time.  Experience Kathika and commit to Zauq, the greatest poet of Old Delhi’s couplet - “ Kaun Jaee ‘Zauq’ par Dilli ki galliyan chhodkar`}</p>
+    <p className='md:text-[27px] text-[16px]  text-justify'>{`Two 19th Century Havelis facing each other, restored, are now turned into one-of-a-kind Museum. Founder and Curator, Mr. Atul Khanna, ‘A Pakka Dilliwala’ at heart aims to preserve, promote and celebrate the cultural heritage of Old Delhi.  The Kathika Cultural Centre brings to you a collection of Archival Photographs, Vintage Decorative Art Objects and Handicrafts, that takes you back in time.  Experience Kathika and commit to Zauq, the greatest poet of Old Delhi’s couplet - “Kaun Jaee ‘Zauq’ par Dilli ki galliyan chhodkar” `}</p>
 </div>
 <div className='lg:w-[43%] w-full'>
   <div className=''>
