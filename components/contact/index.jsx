@@ -36,7 +36,7 @@ const ContactSection = () => {
 </div>
   </div>
 </div>
-<div className='flex flex-col md:flex-row justify-center items-center lg:py-10 md:gap-10 gap-5'>
+<div className='flex flex-col md:flex-row justify-center items-start lg:py-10 md:gap-10 gap-5'>
   <div className='lg:w-[50%] w-full flex flex-col justify-center items-center md:border-r-4 md:border-r-black'>
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Visit Us</h5>
    
