@@ -3,7 +3,7 @@ import Story1 from '../../public/about/about.png'
 import Image from 'next/image'
 const AboutSection = () => {
   return (
-    <div className=' pt-[100px]'>
+    <div className=' pt-[90px]'>
     <div  className="   bg-cover bg-center  h-full " style={{ backgroundImage: `url(${Story1.src})`, backgroundSize: 'cover' , backgroundPosition: 'center'}}>
   <div className=' flex justify-center items-center h-full'>
   <div className='container mx-auto'>

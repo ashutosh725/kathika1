@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Map from './Map'
 
 
 
@@ -14,7 +15,7 @@ const ContactSection = () => {
 
         </div>
         <div className='flex flex-col md:flex-row justify-center items-start md:py-10 py-5 md:gap-10 gap-5'>
-  <div className='lg:w-[50%] w-full   md:border-r-4 md:border-r-black'>
+  <div className='lg:w-[50%] w-full   md:border-r-4 md:border-r-black '>
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Kathika Museum Visit</h5>
     <p className='md:text-[25px] text-[20px] text-center font-Alice'>For Enquiry - </p>
 <div className='flex flex-col justify-center items-center'>
@@ -22,6 +23,7 @@ const ContactSection = () => {
 </Link>
     <Link  href="tel:+919650339839"  className='md:text-[30px] text-[17px]  text-center font-Alice'> +91 9650339839</Link>
 </div>
+
   </div>
   <div className='lg:w-[50%] w-full '>
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Kathika Cultural Experience</h5>
@@ -35,12 +37,14 @@ const ContactSection = () => {
   </div>
 </div>
 <div className='flex flex-col md:flex-row justify-center items-center lg:py-10 md:gap-10 gap-5'>
-  <div className='lg:w-[50%] w-full md:border-r-4 md:border-r-black'>
+  <div className='lg:w-[50%] w-full flex flex-col justify-center items-center md:border-r-4 md:border-r-black'>
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Visit Us</h5>
    
     <p  className='md:text-[30px] text-[17px]  text-center font-Alice px-5'> Kathika Haveli, Imli Mohalla, Kucha Pati Ram Sita Ram Bazaar, Gali Khatikan, Near Himmat Garh Police Station - Delhi 110006
 </p>
-   
+<div className='flex justify-center items-center mt-5'>
+<Map/>
+</div>
   </div>
   <div className='lg:w-[50%] w-full '>
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Find Us</h5>

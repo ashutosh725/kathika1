@@ -18,3 +18,10 @@ export default function Page (){
         </>
     )
 }
+export function generateMetadata(){
+  return {
+      title: "Kathika Trust",
+
+     
+  }
+}

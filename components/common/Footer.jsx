@@ -10,6 +10,8 @@ import React, { useState } from "react";
 import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { IoMdMail } from "react-icons/io";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -78,7 +80,7 @@ const Footer = () => {
                
                   <a
                      href="mailto:info@kathika.in"
-                    className="font-small  text-[#FFF5EE90] dark:text-white"
+                    className="font-small  text-[#FFF5EE90] hover:text-white"
                   >
                     info@kathika.in
                   </a>
@@ -347,7 +349,7 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-5">
-                <li>
+                {/* <li>
                   <a href="https://www.facebook.com/Kathika.OldDelhi/" target="_blank" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
@@ -438,7 +440,10 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
+                <Link href="https://www.facebook.com/Kathika.OldDelhi/" target="_blank"><FaFacebookF className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
+                <Link href="https://www.linkedin.com/company/kathikaolddelhi/?originalSubdomain=in" target="_blank"><FaLinkedinIn className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
+                <Link href="https://www.instagram.com/kathikaolddelhi/?hl=en" target="_blank"><FaInstagram className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
               </ul>
             </motion.div>
           </div>

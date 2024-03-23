@@ -16,7 +16,7 @@ const handleEmailChange = (event) => {
 };
   return (
     <div className="bg-[#fefbf5] py-10  text-center">
-      <h2 className="mb-4.5 lg:text-[43px] text-[22px] font-dMSerifDisplay font-semibold  leading-[62px]  text-[#292F36] dark:text-white">Dilli ki dil wali Newsletter</h2>
+      <h2 className="mb-4.5 lg:text-[43px] text-[22px] font-dMSerifDisplay font-semibold  leading-[62px]  text-[#292F36] ">Dilli ki dil wali Newsletter</h2>
       <p className="text-[#4D5053]  font-jost font-[400] lg:text-[18px] text-[15px]  tracking-[0.22px] leading-[33px]">
         Do drop in your email so that we can share with you our latest
         exhibitions, upcoming events and a whole lot of Old Delhi memories.
